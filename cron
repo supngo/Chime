@@ -1,3 +1,6 @@
-00 07-21 * * 1,2,3,4 /home/odroid/Work/Chime/chime.sh
-00 08-22 * * 5,6 /home/odroid/Work/Chime/chime.sh
-00 08-21 * * 7 /home/odroid/Work/Chime/chime.sh
+00 07-21 * * 1,2,3,4 XDG_RUNTIME_DIR=/run/user/1000 /home/pi/Work/Chime/chime.sh
+00 07-22 * * 5 XDG_RUNTIME_DIR=/run/user/1000 /home/pi/Work/Chime/chime.sh
+00 08-22 * * 6 XDG_RUNTIME_DIR=/run/user/1000 /home/pi/Work/Chime/chime.sh
+00 08-21 * * 7 XDG_RUNTIME_DIR=/run/user/1000 /home/pi/Work/Chime/chime.sh
+00 22 * * *  sudo /home/pi/Work/uhubctl/uhubctl -a on -p 1-4 -l 1-1
+00 07 * * *  sudo /home/pi/Work/uhubctl/uhubctl -a off -p 1-4 -l 1-1
