@@ -1,4 +1,4 @@
-cd /home/pi/Work/Chime/src
+cd /home/pi/Chime/src
 pwd
 java --version
 java Playsound
