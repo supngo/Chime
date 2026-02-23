@@ -5,11 +5,11 @@
 
 #day=$(date +"%u")  # 1=Mon, 7=Sun
 
-hour=$(date +"%H")
-echo [$today]
-hour_sound = home/pi/Chime/src/chimes/$hour.wav
-echo hour_sound
+hour=$(date +"%-H")
+folder="/home/pi/Chime/src/chimes"
+#echo $hour
+hour_sound="${folder}/${hour}.wav"
+#echo $hour_sound
 
-#aplay /home/pi/Chime/src/chimes/chime.wav
-# aplay /home/pi/Chime/src/chimes/.wav
-
+aplay /home/pi/Chime/src/chimes/chime.wav
+aplay $hour_sound
